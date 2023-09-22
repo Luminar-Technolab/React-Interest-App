@@ -1,0 +1,103 @@
+
+
+                    REACT - Front End Technology
+                ------------------------------------
+
+                    Basic commands
+                ------------------------
+            1. To create react project : npx create-react-app project-name
+            2. To run react app : npm start
+            3. To install Material UI : npm install @mui/material @emotion/react @emotion/styled
+            
+
+                    Basic Features & Concepts
+                ---------------------------------
+
+            - Is a collection of JS Libraries : Used to design UI 
+            - Creating Single page application : GMAIL, Facebook, Twitter
+            - Declarative Approach : 
+            - Immutable & mutable
+            - Pure Functions : Functions accept immutable objects and returns a new object - It didnot cause any side effect : Ex - React Components
+            - Virtual DOM : 
+            - JSX (Javascript XML) : const heading = <h1>heading 1</h1>
+                - JSX expressions must have one parent element
+                - React fragments : <> </> similar to <div> </div>
+                - Changes in attribute : always use camel letters
+                    - class become className
+                    - for become htmlFor
+                - to display js expressions in jsx : place js expressions inside a {}
+                - to style use Inline Styling in Component - where css property should be in camel case in an object
+                - every jsx element must have closing tag
+                - tag without contents can be represented as self closing tag : <tag />
+            - Transpiling : JSX to (HTML,CSS,JS) - babel library
+            - create react app using create-react-app command
+            - Components : Small part of UI, React app is a collection Components, they are arranged as a tree structure with parent/start node as 'App' Component
+                - Component is a js/jsx file, with filename & Components name will start with capital letter, it always returns HTML 
+                - different ways to create Components
+                    - Functional / stateless Components 
+                    - Class based / stateful Components
+                - High Order Component (HOC)
+            - Data sharing in React Component : One way binding - parent to child
+                - Using props : property of Component
+                    - It is an object
+                    - Child can access shared data from its Function argument via props
+            - Style React Components - Using CSS
+                - Inline Styling
+                - External Style sheet
+                - CSS Module : file with extension as .module.css
+            - React Events 
+                - without argument function : Events bind using its function name only
+                - with argument function : Events bind using arrow function
+                - with event object as argument : Events bind using arrow function with argument as event
+            - Conditional Rendering
+                - if statements : && operator
+                - if-else statements : ?: Ternary operator
+            - React State : Built in object of react Component
+                - Store property of Component
+                - State Changes then it re-rednder the Component : use setState function
+            - React Component Life Cycle
+                - Mounting phase : putting all elements into DOM
+                    - constructor()
+                    - getDerivedStateFromProps()
+                    - render()
+                    - componentDidMount()
+                - Updating phase : Component Updating
+                    - getDerivedStateFromProps()
+                    - shouldComponentUpdate()
+                    - render()
+                    - getSnapshotBeforeUpdate()
+                    - componentDidUpdate()
+                - Unmounting phase : removing element from DOM
+                    - componentWillUnmount()
+            - React Hooks : for making Functional Component to use react Features 
+                - Import hook ,  and to use call the hook inside Component
+                - Rules for using hook:
+                    - can used only in Functional Component
+                    - it can only called at the top level of Component
+                    - Hooks are not Conditional
+                - different Type hook
+                    - Predefined Hooks
+                        - useState(initial-value) : return state and function for Updating state
+                    - custom Hooks
+            - Difference between Functional and class based Component
+                    Functional component                                Class based component
+                 -------------------------------------           -------------------------------------
+                1. Js pure function accept props as             1. A class extended from react component and 
+                argument and return jsx                         render function it return jsx 
+                (react elements)                                (react elements)
+                2. No need of render function                   2. Need render function to return jsx
+                3. Run code from top to bottom, once jsx        3. Component alive depending on the life Cycle
+                return it cannot be alive                       phases
+                4. Stateless Component                          4. Stateful component
+                5. Hooks are used                               5. No need to use hook
+                6. Constructor is not used                      6. Use constructor to initialise the state
+                7. Life Cycle methods like componentDidMount    7. Can use life Cycle methods inside component
+                is not used 
+            - Rendering List : use map method
+            - React Form
+                - form are handled by component
+                - preventDefault() - method cancels the event if it is cancelable
+                - Type of Components
+                    - Controlled component - managed by react component
+                    - Uncontrolled component - manage by DOM
+
